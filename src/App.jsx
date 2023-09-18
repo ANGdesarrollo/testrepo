@@ -5,7 +5,7 @@ function App() {
   const [ data, setData ] = useState();
 
   useEffect(() => {
-    fetch('http://localhost:8080/testPino')
+    fetch('https://thd.social/api/testPino')
       .then(res => res.text())
       .then(res => setData(res))
   }, [])
